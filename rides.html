@@ -164,14 +164,14 @@
 
                                 <div class="search-content">
 
-                                    <form action="add-ride.php" method="get" novalidate autocomplete="off" class="idealforms searchtours" >
+                                    <form action="getrides.php" method="post" novalidate autocomplete="off" class="idealforms searchtours" >
 
                                         <div class="row">
 
                                             <div class="col-md-3 col-sm-3 col-xs-12">
                                                 <div class="field">
-                                                    <select  name="city">
-                                                        <option selected hidden value="">Od</option>
+                                                    <select  name="startlocation">
+                                                        <option input type="text" selected hidden value="">Od</option>
                                                         <option value="banjaluka">Banja Luka</option>
                                                         <option value="sarajevo">Sarajevo</option>
                                                         <option value="bihac">Bihac</option>
@@ -187,7 +187,7 @@
                                             <div class="col-md-3 col-sm-3 col-xs-12">
 
                                                 <div class="field">
-                                                    <select  name="destination">
+                                                    <select  name="endlocation">
                                                         <option selected hidden value="">Do</option>
                                                         <option>Banja Luka</option>
                                                         <option>Sarajevo</option>
@@ -204,7 +204,7 @@
                                             <div class="col-md-3 col-sm-3 col-xs-12">
 
                                                 <div class="field">
-                                                    <input name="event" type="text" placeholder="Datum" class="datepicker">
+                                                    <input name="datum" type="text" placeholder="Datum" class="datepicker">
                                                 </div>
 
 
