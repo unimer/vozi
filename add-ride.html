@@ -160,18 +160,19 @@
 
                             </section><!-- end .container -->
 
+ 
                             <div class="col-md-12 col-sm-12 col-xs-12">
 
                                 <div class="search-content">
 
-                                    <form action="insert.php" method="post"  >
+                                    <form action="process.php" method="post" novalidate autocomplete="off" class="idealforms searchtours" >
 
                                         <div class="row">
 
                                             <div class="col-md-3 col-sm-3 col-xs-12">
                                                 <div class="field">
-                                                    <select  name="startlocation" required>
-                                                        <option selected hidden value="">Od</option>
+                                                    <select  name="startlocation">
+                                                        <option input type="text" selected hidden value="">Od</option>
                                                         <option value="banjaluka">Banja Luka</option>
                                                         <option value="sarajevo">Sarajevo</option>
                                                         <option value="bihac">Bihac</option>
@@ -187,7 +188,7 @@
                                             <div class="col-md-3 col-sm-3 col-xs-12">
 
                                                 <div class="field">
-                                                    <select  name="endlocation" required>
+                                                    <select  name="endlocation">
                                                         <option selected hidden value="">Do</option>
                                                         <option>Banja Luka</option>
                                                         <option>Sarajevo</option>
@@ -204,7 +205,7 @@
                                             <div class="col-md-3 col-sm-3 col-xs-12">
 
                                                 <div class="field">
-                                                    <input name="date" type="text" placeholder="Datum" class="datepicker" required>
+                                                    <input name="datum" type="text" placeholder="Datum" class="datepicker">
                                                 </div>
 
 
@@ -213,7 +214,7 @@
                                             <div class="col-md-3 col-sm-3 col-xs-12">
 
                                                 <div class="field">
-                                                    <select  name="seats" required>
+                                                    <select  name="seats">
                                                         <option selected hidden value="">Broj mesta</option>
                                                         <option>1</option>
                                                         <option>2</option>
@@ -227,12 +228,13 @@
                                             <div class="col-md-3 col-sm-3 col-xs-12">
 
                                                 <div class="field buttons">
-                                                    <button type="submit" class="btn btn-lg green-color">Trazi</button>
+                                                    <button type="submit" class="btn btn-lg green-color">Dodaj</button>
                                                 </div>
 
                                             </div>
 
                                         </div>
+
 
 
                                     </form>
