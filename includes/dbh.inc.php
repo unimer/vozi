@@ -1,0 +1,15 @@
+<?php
+
+$hostname = "localhost";
+$username = "root";
+$password = "koliko1je";
+$dbName = "loginsystemtut";
+
+#connection to database
+$conn=mysqli_connect($hostname, $username, $password, $dbName);
+
+#check if connection works
+
+if($conn->connect_error){
+  die("Database connection failed". $conn->connect_error);
+}
