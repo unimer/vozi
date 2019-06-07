@@ -7,6 +7,22 @@
         <!-- Basic Page Needs -->
         <meta charset="utf-8">
         <title>My ride - Rides</title>
+        <script type = "text/javascript" src ="js/jquery-1.11.3.js"></script>
+        <script type ="text/javascript"> 
+            $(document).ready(function()){
+                $('#load').click(function(event)){
+                    event.preventDefault();
+                    $.ajax({
+                        // url: "load.php",
+                        dataType:"html",
+                        success: function(Result) {
+                            $('#result').html(Result)
+                        }
+                    })
+                }
+            }
+        </script>
+
         <meta name="description" content="">
         <meta name="author" content="">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -164,7 +180,7 @@
 
                                 <div class="search-content">
 
-                                    <form action="getrides.php" method="post" novalidate autocomplete="off" class="idealforms searchtours" >
+                                    <form  method="post" action ="data.php "  class="idealforms searchtours" >
 
                                         <div class="row">
 
@@ -227,7 +243,7 @@
                                             <div class="col-md-3 col-sm-3 col-xs-12">
 
                                                 <div class="field buttons">
-                                                    <button type="submit" class="btn btn-lg green-color">Trazi</button>
+                                                    <button type="submit" name ="load" id="load" class="btn btn-lg green-color">Trazi</button>
                                                 </div>
 
                                             </div>
@@ -273,9 +289,13 @@
                                 <article class="ride-box clearfix">
 
                                     <div class="ride-content">
+                                     
+                                   
                                         <h3><a href="#">Od Banja Luke do Sarajeva</a></h3>vozi: <a href="#">Milorad Dodik</a>
-                                    </div>
+                                 </div>
 
+
+                                   
                                     <ul class="ride-meta">
 
                                         <li class="ride-date">
@@ -467,7 +487,7 @@
                     <div class="row">
 
                         <div class="col-md-12 col-sm-12 col-xs-12">
-                            Copyright by MBBB
+                            Copyright by BNB
                         </div>
 
                     </div><!-- end .row -->
