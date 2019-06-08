@@ -6,15 +6,15 @@ if (isset($_POST['login-submit'])) {
   $password = $_POST['pwd'];
 
   if (empty($mailuid) || empty($password)) {
-    header("Location: ../index.php?error=emptyfields");
+    header("Location: ../login.form.php?error=emptyfields");
     exit();
   }
   else if (empty($mailuid)){
-    header("Location: ../index.php?error=emptyfieldmail");
+    header("Location: ../login.form.php?error=emptyfieldmail");
     exit();
   }
   else if (empty($password)){
-    header("Location: ../index.php?error=emptyfieldpwd");
+    header("Location: ../login.form.php?error=emptyfieldpwd");
     exit();
   }
   else{
@@ -22,7 +22,7 @@ if (isset($_POST['login-submit'])) {
     $stmt = mysqli_stmt_init($conn);
 
     if (!mysqli_stmt_prepare($stmt, $sql)) { //preparing the statements and checking if statement have an error
-      header("Location: ../index.php?error=sqlerror");
+      header("Location: ../login.form.php?error=sqlerror");
       exit();
     }
     else{
@@ -35,7 +35,7 @@ if (isset($_POST['login-submit'])) {
 
         if($pwdchk == false){
 
-          header("Location: ../index.php?error=wrong");
+          header("Location: ../login.form.php?error=wrong");
           exit();
         }
         elseif ($pwdchk == true) {
@@ -50,12 +50,12 @@ if (isset($_POST['login-submit'])) {
           exit();
         }
         else {
-          header("Location: ../index.php?error=wrong");
+          header("Location: ../login.form.php?error=wrong");
           exit();
         }
       }
       else{
-        header("Location: ../index.php?error=nouser");
+        header("Location: ../login.form.php?error=nouser");
         exit();
       }
 

@@ -2,26 +2,20 @@
 require "header.php"
 ?>
 
-  <main>
-    <h1>Sign-up</h1>
-    <?php
-      if (isset($_GET['error'])) {
-        if ($_GET['error'] == "emptyfields") {
-          echo <p> Fill all fields </p>
-        }
+<body>
+<section class="main-content">
+    <div class ="container">
 
-      }
-     ?>
-    <form action="includes/signup.inc.php" method="POST">
-      <input type="text" name="uid" placeholder="Username">
-      <input type="text" name="mail" placeholder="E-mail">
-      <input type="password" name="pwd" placeholder="Password">
-      <input type="password" name="pwd-repeat" placeholder="Repeat Password">
-      <button type="submit" name="signup-btn">Signup</button>
-    </form>
+        <div class= "alert alert-success">
+          <strong>Uspješno ste se regisrovali !</strong> 
+        </div>
+      <br>
+      <div class = "col-xs-2">
+        <div class="float-left">
+          <a href="login.form.php" class="btn btn-success">Prijava</a>
+        </div>
+      </div>
+  </div>
 
-  </main>
-
-<?php
-  require footer.php
-?>
+</section>
+</body>

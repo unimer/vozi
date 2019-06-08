@@ -9,19 +9,19 @@
 
             <div class="form-group">
               <label>Korisničko ime:</label>
-              <input type="text" class="form-control" placeholder="Enter email" name="uid">
+              <input type="text" class="form-control" placeholder="" name="uid">
             </div>
             <div class="form-group">
               <label>Email:</label>
-              <input type="email" class="form-control" placeholder="Enter email" name="mail">
+              <input type="email" class="form-control" placeholder="" name="mail">
             </div>
             <div class="form-group">
               <label>Šifra:</label>
-              <input type="password" class="form-control" placeholder="Enter password" name="pwd">
+              <input type="password" class="form-control" placeholder="" name="pwd">
             </div>
             <div class="form-group">
               <label>Potvrda šifre:</label>
-              <input type="password" class="form-control" placeholder="Enter password" name="pwd-repeat">
+              <input type="password" class="form-control" placeholder="" name="pwd-repeat">
             </div>
             <button type="submit" class="btn btn-success" name='signup-btn'>Pošalji</button>
 

@@ -8,11 +8,11 @@
 
             <div class="form-group">
               <label>Korisničko ime/Email:</label>
-              <input type="text" class="form-control" placeholder="Enter email" name="mailuid">
+              <input type="text" class="form-control" placeholder="" name="mailuid">
             </div>
             <div class="form-group">
               <label>Šifra:</label>
-              <input type="password" class="form-control" placeholder="Enter password" name="pwd">
+              <input type="password" class="form-control" placeholder="" name="pwd">
             </div>
             <button type="submit" class="btn btn-success" name='login-submit'>Prijava</button>
             <div class="label">
