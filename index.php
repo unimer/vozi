@@ -2,8 +2,8 @@
     <body>
 
 
-        <?php require "offered-rides.php" ?>
-        <?php require "footer.php" ?>
+        <?php require "offered-rides.php"; ?>
+        <?php require "footer.php"; ?>
 
         <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
