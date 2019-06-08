@@ -3,7 +3,7 @@
 $hostname = "localhost";
 $username = "root";
 $password = "";
-$dbName = "loginsystemtut";
+$dbName = "vozi";
 
 #connection to database
 $conn=mysqli_connect($hostname, $username, $password, $dbName);
