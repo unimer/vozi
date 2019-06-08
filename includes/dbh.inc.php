@@ -2,7 +2,7 @@
 
 $hostname = "localhost";
 $username = "root";
-$password = "koliko1je";
+$password = "";
 $dbName = "loginsystemtut";
 
 #connection to database

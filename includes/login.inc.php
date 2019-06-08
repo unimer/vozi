@@ -10,11 +10,11 @@ if (isset($_POST['login-submit'])) {
     exit();
   }
   else if (empty($mailuid)){
-    header("Location: ../index.php?error=emptyfields");
+    header("Location: ../index.php?error=emptyfieldmail");
     exit();
   }
   else if (empty($password)){
-    header("Location: ../index.php?error=emptyfields");
+    header("Location: ../index.php?error=emptyfieldpwd");
     exit();
   }
   else{
@@ -41,10 +41,11 @@ if (isset($_POST['login-submit'])) {
         elseif ($pwdchk == true) {
 
           session_start();
-
+          echo
           $_SESSION['userId'] = $row['idUsers'];
           $_SESSION['userUid'] = $row['uidUsers'];
-          header("Location: ../index.php");
+
+          header("Location: ../index.php?success=kul&userId=".$row['idUsers']);
 
           exit();
         }

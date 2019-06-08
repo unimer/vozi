@@ -1,3 +1,6 @@
+<?php
+session_start();
+ ?>
 <header class="header">
 
     <div class="top-menu">
@@ -83,12 +86,23 @@
                                             </li>
                                             <li>
                                               <div class="container button">
-                                                <li>
-                                                  <a href="rides.php" class="btn btn-success">Prijava</a>
-                                                </li>
-                                                <li>
-                                                  <a href="rides.php" class="btn btn-warning">Registracija</a>
-                                                </li>
+                                                <?php
+
+                                                  if (isset($_SESSION['userId'])) {
+                                                    echo '<a href="includes/logout.inc.php" class="btn btn-warning">Odjava</a>';
+                                                  }
+                                                  else{
+                                                    //echo "<h1>Nikola</h1>";
+                                                    echo "<li>";
+                                                    echo '<a href="login.form.php" class="btn btn-success">Prijava</a>';
+                                                    echo '</li>';
+                                                    echo '<li>';
+                                                    echo '<a href="rides.php" class="btn btn-warning">Registracija</a>';
+                                                    echo '</li>';
+                                                  }
+
+                                                 ?>
+
                                               </div>
                                             </li>
                                             <!--<li>

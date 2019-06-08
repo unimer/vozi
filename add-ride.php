@@ -26,7 +26,7 @@
         <link href="css/slicknav.css" rel="stylesheet">
         <!-- Main style -->
         <link href="css/style.css" rel="stylesheet">
-
+        <link href="css/forms.css" rel="stylesheet">
         <!-- Modernizr -->
         <script src="js/modernizr.js"></script>
 
@@ -131,7 +131,7 @@
 
         <section class="main-content">
 
-            <div class="container">
+            <div class="container center_div">
                 <div class="row">
 
                     <div class="col-md-12 col-sm-12 col-xs-12">
