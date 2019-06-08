@@ -125,7 +125,7 @@ session_start();
                                                 <a href="index.php">Pocetna</a>
                                             </li>
                                             <li>
-                                                <a href="rides.php">Voznje</a>
+                                                <a href="rides.php">Pretrazi Voznje</a>
                                             </li>
                                             <li>
                                                 <a href="add-ride.php">Dodaj voznju</a>
