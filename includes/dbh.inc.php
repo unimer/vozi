@@ -2,8 +2,8 @@
 
 $hostname = "localhost";
 $username = "root";
-$password = "koliko1je";
-$dbName = "loginsystemtut";
+$password = "";
+$dbName = "vozi";
 
 #connection to database
 $conn=mysqli_connect($hostname, $username, $password, $dbName);

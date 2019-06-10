@@ -15,7 +15,7 @@ $endlocation = $_POST['endlocation'];
 $datum = $_POST['datum'];
 $seats = $_POST['seats'];
 
-$sql = "INSERT INTO insertion (`startlocation`,`endlocation`,`datum`,`seats`)
+$sql = "INSERT INTO rides (`startlocation`,`endlocation`,`datum`,`seats`)
 VALUES ('$startlocation', '$endlocation','$datum','$seats')";
 
 if (mysqli_query($conn, $sql)) {
