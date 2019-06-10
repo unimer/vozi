@@ -41,9 +41,10 @@ if (isset($_POST['login-submit'])) {
         elseif ($pwdchk == true) {
 
           session_start();
-          echo
           $_SESSION['userId'] = $row['idUsers'];
           $_SESSION['userUid'] = $row['uidUsers'];
+
+          echo $_SESSION['userUid'];
 
           header("Location: ../index.php?success=kul&userId=".$row['idUsers']);
 

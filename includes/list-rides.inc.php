@@ -14,7 +14,7 @@ function print_rides($data){
                             echo "<article class=\"ride-box clearfix\">";
 
                                 echo "<div class=\"ride-content\">";
-                                    echo "<h3><a href=\"#\">".$all[startpoint]."-".$all[endpoint]."</a></h3>vozi: <a href=\"#\">implementation needed</a>";
+                                    echo "<h3><a href=\"#\">".$all[startpoint]."-".$all[endpoint]."</a></h3>vozi: <a href=\"#\">".$all[usernameRides]."</a>";
                                 echo "</div>";
 
                                 echo "<ul class=\"ride-meta\">";
@@ -42,7 +42,7 @@ function print_rides($data){
 }
 
 if(isset($_POST['search-btn'])){
-  
+
   $sql = "SELECT startpoint,endpoint,dateRides,seats FROM rides WHERE startpoint='".$startpoint."' AND endpoint = '".$endpoint."' AND dateRides ='".$dateRides."' AND  seats ='".$seats."'";
 
   $results=mysqli_query($conn,$sql);
