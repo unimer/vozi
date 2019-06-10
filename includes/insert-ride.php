@@ -16,26 +16,30 @@ if (isset($_POST['insert-ride'])) {
   //echo $usernameRides;
   //echo "<h1> something </h1>";
   //$sql = "INSERT INTO rides (startpoint, endpoint, dateRides, timeRides, seats) VALUES (?,?,?,?,?)";
+  if (isset($_SESSION['userUid'])) {
+    $sql = "INSERT INTO rides (`startpoint`,`endpoint`,`dateRides`, `timeRides`,`seats`, `cost`,`description`, `usernameRides`  )  VALUES ('$startpoint', '$endpoint','$dateRides', '$timeRides','$seats', '$cost', '$description', '$usernameRides' )";
 
-  $sql = "INSERT INTO rides (`startpoint`,`endpoint`,`dateRides`, `timeRides`,`seats`, `cost`,`description`, `usernameRides`  )  VALUES ('$startpoint', '$endpoint','$dateRides', '$timeRides','$seats', '$cost', '$description', '$usernameRides' )";
+    $stmt = mysqli_stmt_init($conn);
 
-  $stmt = mysqli_stmt_init($conn);
+    if(!mysqli_stmt_prepare($stmt, $sql)){
+      header("Location: ../rides.php", true, 301);
+      exit();
+    }
+    else{
+      mysqli_stmt_bind_param($stmt, "ssssssss", $startpoint, $endpoint, $dateRides, $timeRides, $seats, $cost, $description, $usernameRides);
+      mysqli_stmt_execute($stmt);
+      header("Location: ../rides.php?sucess=suc", true, 301);
+      exit();
 
-  if(!mysqli_stmt_prepare($stmt, $sql)){
-    header("Location: ../rides.php", true, 301);
-    exit();
+    }
+
+
+    mysqli_close($conn);
+
   }
   else{
-    mysqli_stmt_bind_param($stmt, "ssssssss", $startpoint, $endpoint, $dateRides, $timeRides, $seats, $cost, $description, $usernameRides);
-    mysqli_stmt_execute($stmt);
-    header("Location: ../rides.php?sucess=suc", true, 301);
-    exit();
-
+    header("Location: ../not-logged.php");
   }
-
-
-  mysqli_close($conn);
-
 
 
 

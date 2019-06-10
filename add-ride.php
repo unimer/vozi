@@ -1,6 +1,7 @@
 <?php require "header.php"; ?>
-<body>
 
+<body>
+        
         <div class="col-md-12 col-sm-12 col-xs-12">
 
             <div class="search-content">
