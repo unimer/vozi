@@ -1,11 +1,12 @@
 <?php require "header.php" ?>
+
 <body>
         <section class="containter form-group">
           <div class="col-md-12 col-sm-12 col-xs-12">
 
               <div class="search-content">
 
-                  <form action="getrides.php" method="post" novalidate autocomplete="off" class="idealforms searchtours" >
+                  <form action="includes/list-rides.inc.php" method="post" novalidate autocomplete="off" class="idealforms searchtours">
 
                       <div class="row">
 
@@ -68,7 +69,7 @@
                           <div class="col-md-3 col-sm-3 col-xs-12">
 
                               <div class="field buttons">
-                                  <button type="submit" class="btn btn-lg green-color">Trazi</button>
+                                  <button id="button_1" type="submit" class="btn btn-lg green-color" name="search-btn">Trazi</button>
                               </div>
 
                           </div>
@@ -83,7 +84,10 @@
         </section> <!--end section search menu-->
 
 
-        <?php require "offered-rides.php" ?>
+        <div id="rides">
+          <?php require "offered-rides.php" ?>
+        </div>
+
 
         <?php require "footer.php" ?>
 

@@ -14,7 +14,8 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
               <div class="page-content">
                 <div class="rides-list">
-            <?php require "includes/list-rides.inc.php"; ?>
+
+                    <?php require "includes/list-rides.inc.php"; ?>
 
 
 

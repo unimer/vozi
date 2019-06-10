@@ -32,7 +32,7 @@ session_start();
          <link href="css/forms.cdd" rel="stylesheet">
          <!-- Modernizr -->
          <script src="js/modernizr.js"></script>
-
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
          <!-- Fonts -->
          <link href="css/font-awesome.min.css" rel="stylesheet">
          <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
