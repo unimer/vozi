@@ -10,11 +10,10 @@ $seats =$_POST ["seats"];
 function print_rides($data){
   while ($all = mysqli_fetch_assoc($data)) {
 
-
                             echo "<article class=\"ride-box clearfix\">";
 
                                 echo "<div class=\"ride-content\">";
-                                    echo "<h3><a href=\"#\">".$all[startpoint]."-".$all[endpoint]."</a></h3>vozi: <a href=\"#\">".$all[usernameRides]."</a>";
+                                    echo "<h3><a href=\"ride.php?rideID=".$all[idRides]."\">".$all[startpoint]."-".$all[endpoint]."</a></h3>vozi: <a href=\"#\">".$all[usernameRides]."</a>";
                                 echo "</div>";
 
                                 echo "<ul class=\"ride-meta\">";
@@ -55,6 +54,7 @@ function print_rides($data){
                                 echo "</ul>"; //"<!-- end .ride-meta -->
 
                             echo "</article>"; //"<!-- end .ride-box -->
+                            echo "</a>";
                     }
 
 }
