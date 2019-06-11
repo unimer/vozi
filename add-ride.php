@@ -15,6 +15,7 @@
                             <div class="field ">
                                 <select  name="startlocation" required>
                                     <option input type="text" selected hidden value="">Od</option>
+<<<<<<< HEAD
 
                                       <option >Banja Luka</option>
                                       <option>Bihac</option>
@@ -22,6 +23,15 @@
                                       <option>Bileća</option>
                                       <option >Brcko</option>
                                       <option>Bugojno</option>
+=======
+                          
+                                      <option >Banja Luka</option>
+                                      <option >Bihac</option>
+                                      <option >Bijeljina</option>
+                                      <option >Bileća</option>
+                                      <option >Brcko</option>
+                                      <option >Bugojno</option>
+>>>>>>> 2246357dee89dbbe76912cdad2e7c38dc2f6d0d6
                                       <option >Cazin</option>
                                       <option >Čaopljina</option>
                                       <option >Čelinac</option>
@@ -67,6 +77,7 @@
                             <div class="field">
                                 <select  name="endlocation">
                                 <option input type="text" selected hidden value="">Do</option>
+<<<<<<< HEAD
                                       <option value="Banja Luka">Banja Luka</option>
                                       <option value="Bihać">Bihac</option>
                                       <option value="Bijeljina">Bijeljina</option>
@@ -76,6 +87,17 @@
                                       <option value="Cazin">Cazin</option>
                                       <option value="Čapljina">Čaopljina</option>
                                       <option value="Čelinac">Čelinac</option>
+=======
+                                      <option >Banja Luka</option>
+                                      <option >Bihac</option>
+                                      <option >Bijeljina</option>
+                                      <option >Bileća</option>
+                                      <option >Brcko</option>
+                                      <option >Bugojno</option>
+                                      <option >Cazin</option>
+                                      <option >Čaopljina</option>
+                                      <option >Čelinac</option>
+>>>>>>> 2246357dee89dbbe76912cdad2e7c38dc2f6d0d6
                                       <option >Doboj</option>
                                       <option >Donji Vakuf</option>
                                       <option >Drvar</option>
@@ -150,12 +172,21 @@
                         <<div class="col-md-3 col-sm-3 col-xs-12">
 
                         <div class="field">
+<<<<<<< HEAD
                             <select  name="price" placeholder="Cijena">
                             <?php
                                 echo "<option> Cijena </option>";
                                 for($i=1; $i<=100; $i++)
                                 {
                                     echo "<option value=".$i.">".$i." KM  </option>";
+=======
+                            <select  name="price" >
+                            <?php 
+                                for($i=1; $i<=100; $i++)
+                                {
+                                    
+                                    echo "<option option value=".$i.">".$i." KM  </option>";
+>>>>>>> 2246357dee89dbbe76912cdad2e7c38dc2f6d0d6
                                 }
                                 ?>
 

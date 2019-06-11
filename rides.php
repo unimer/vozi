@@ -6,20 +6,20 @@
 
               <div class="search-content">
 
-                  <form action="includes/list-rides.inc.php" method="post" novalidate autocomplete="off" class="idealforms searchtours">
+                  <form action="process.php" method="post" novalidate autocomplete="off" class="idealforms searchtours">
 
                       <div class="row">
 
                           <div class="col-md-3 col-sm-3 col-xs-12">
                               <div class="field">
                                   <select  name="startlocation">
-                                      <option input type="text" selected hidden value="">Do</option>
-                                      <option value="banjaluka">Banja Luka</option>
-                                      <option value="bihac">Bihac</option>
-                                      <option value="bijeljina">Bijeljina</option>
-                                      <option value="bileca">Bileća</option>
-                                      <option value="brcko">Brcko</option>
-                                      <option value="bugojno">Bugojno</option>
+                                      <option input type="text" selected hidden value="">Od</option>
+                                      <option >Banja Luka</option>
+                                      <option >Bihac</option>
+                                      <option >Bijeljina</option>
+                                      <option >Bileća</option>
+                                      <option >Brcko</option>
+                                      <option >Bugojno</option>
                                       <option >Cazin</option>
                                       <option >Čaopljina</option>
                                       <option >Čelinac</option>
@@ -65,14 +65,14 @@
 
                               <div class="field">
                                   <select  name="endlocation">
-                                      <option selected hidden value="">Do</option>
-                                      <option input type="text" selected hidden value="">Od</option>
-                                      <option value="banjaluka">Banja Luka</option>
-                                      <option value="bihac">Bihac</option>
-                                      <option value="bijeljina">Bijeljina</option>
-                                      <option value="bileca">Bileća</option>
-                                      <option value="brcko">Brcko</option>
-                                      <option value="bugojno">Bugojno</option>
+                                      
+                                      <option input type="text" selected hidden value="">Do</option>
+                                      <option >Banja Luka</option>
+                                      <option >Bihac</option>
+                                      <option >Bijeljina</option>
+                                      <option >Bileća</option>
+                                      <option >Brcko</option>
+                                      <option >Bugojno</option>
                                       <option >Cazin</option>
                                       <option >Čaopljina</option>
                                       <option >Čelinac</option>
