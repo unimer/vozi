@@ -11,7 +11,7 @@ if (isset($_POST['insert-ride'])) {
   $timeRides =$_POST['timee'];
   $cost =$_POST['price'] ;
   $description = $_POST['description'];
-  
+
   $usernameRides = $_SESSION['userUid'];
 
   //echo $usernameRides;
@@ -41,7 +41,6 @@ if (isset($_POST['insert-ride'])) {
   else{
     header("Location: ../not-logged.php");
   }
-
 
 
 }
