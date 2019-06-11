@@ -16,10 +16,6 @@
               <input type="email" class="form-control" placeholder="" name="mail">
             </div>
             <div class="form-group">
-              <label>Tablice automobila:</label>
-              <input type="text" class="form-control" placeholder="" name="licencePlates">
-            </div>
-            <div class="form-group">
               <label>Šifra:</label>
               <input type="password" class="form-control" placeholder="" name="pwd">
             </div>
@@ -27,10 +23,14 @@
               <label>Potvrda šifre:</label>
               <input type="password" class="form-control" placeholder="" name="pwd-repeat">
             </div>
-
+          
+            <div class="form-group">
+              <label>Tablice automobila:</label>
+              <input type="text" class="form-control" placeholder="" name="licencePlates">
+            </div>
             <button type="submit" class="btn btn-success" name='signup-btn'>Pošalji</button>
 
-
+          
 
           </div>
 
