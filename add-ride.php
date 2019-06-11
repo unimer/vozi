@@ -199,6 +199,13 @@
                         </div>
 
                         <div class="col-md-3 col-sm-3 col-xs-12">
+                          <div class="field" >
+                            <textarea name='contact' placeholder="Kontakt" rows="1" cols="20" required></textarea>
+                          </div>
+                        </div>
+
+
+                        <div class="col-md-3 col-sm-3 col-xs-12">
 
                             <div class="field buttons">
                                 <button type="submit" class="btn btn-lg green-color" name="insert-ride">Dodaj</button>
