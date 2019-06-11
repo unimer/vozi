@@ -15,13 +15,13 @@
                             <div class="field ">
                                 <select  name="startlocation" required>
                                     <option input type="text" selected hidden value="">Od</option>
-                          
-                                      <option value="banjaluka">Banja Luka</option>
-                                      <option value="bihac">Bihac</option>
-                                      <option value="bijeljina">Bijeljina</option>
-                                      <option value="bileca">Bileća</option>
-                                      <option value="brcko">Brcko</option>
-                                      <option value="bugojno">Bugojno</option>
+
+                                      <option >Banja Luka</option>
+                                      <option>Bihac</option>
+                                      <option >Bijeljina</option>
+                                      <option>Bileća</option>
+                                      <option >Brcko</option>
+                                      <option>Bugojno</option>
                                       <option >Cazin</option>
                                       <option >Čaopljina</option>
                                       <option >Čelinac</option>
@@ -67,15 +67,15 @@
                             <div class="field">
                                 <select  name="endlocation">
                                 <option input type="text" selected hidden value="">Do</option>
-                                      <option value="banjaluka">Banja Luka</option>
-                                      <option value="bihac">Bihac</option>
-                                      <option value="bijeljina">Bijeljina</option>
-                                      <option value="bileca">Bileća</option>
-                                      <option value="brcko">Brcko</option>
-                                      <option value="bugojno">Bugojno</option>
-                                      <option >Cazin</option>
-                                      <option >Čaopljina</option>
-                                      <option >Čelinac</option>
+                                      <option value="Banja Luka">Banja Luka</option>
+                                      <option value="Bihać">Bihac</option>
+                                      <option value="Bijeljina">Bijeljina</option>
+                                      <option value="Bileća">Bileća</option>
+                                      <option value="Brcko">Brcko</option>
+                                      <option value="Bugojno">Bugojno</option>
+                                      <option value="Cazin">Cazin</option>
+                                      <option value="Čapljina">Čaopljina</option>
+                                      <option value="Čelinac">Čelinac</option>
                                       <option >Doboj</option>
                                       <option >Donji Vakuf</option>
                                       <option >Drvar</option>
@@ -151,15 +151,15 @@
 
                         <div class="field">
                             <select  name="price" placeholder="Cijena">
-                            <?php 
+                            <?php
                                 for($i=1; $i<=100; $i++)
                                 {
 
                                     echo "<option value=".$i.">".$i." KM  </option>";
                                 }
-                                ?> 
+                                ?>
 
-                                </select>                     
+                                </select>
                         </div>
 
                         </div>
@@ -167,8 +167,8 @@
                         <div class="col-md-3 col-sm-3 col-xs-12">
 
                         <textarea name='description' placeholder="Dodatni uslovi ili opis prevoza" rows="1." cols="20"></textarea>
-                        
-                     
+
+
 
 
                         </div>
