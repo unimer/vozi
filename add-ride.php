@@ -199,6 +199,12 @@
                         </div>
 
                         <div class="col-md-3 col-sm-3 col-xs-12">
+                          <div class="field">
+                            <input type="text" class="form-control" placeholder="Broj registarskih tablica" name="licencePlates">
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-3 col-xs-12">
 
                             <div class="field buttons">
                                 <button type="submit" class="btn btn-lg green-color" name="insert-ride">Dodaj</button>
