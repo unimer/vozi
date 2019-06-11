@@ -20,7 +20,7 @@ function print_rides($data){
                                 echo "<ul class=\"ride-meta\">";
 
                                     echo "<li class=\"ride-date\">";
-                                        echo "<a href=\"#\" class=\"tooltip-link\" data-original-title=\"Date\" data-toggle=\"tooltip\">";
+                                        echo "<a class=\"tooltip-link\" data-original-title=\"Date\" data-toggle=\"tooltip\">";
                                             //echo "<i class=\"fa fa-calendar\"></i>";
                                             echo $all[dateRides];
 
