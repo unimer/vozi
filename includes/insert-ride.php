@@ -8,16 +8,17 @@ if (isset($_POST['insert-ride'])) {
   $endpoint = $_POST['endlocation'];
   $dateRides = $_POST['datum'];
   $seats = $_POST['seats'];
-  $timeRides = "10:45";
-  $cost = "5";
-  $description = "VW - kupim kod boske";
+  $timeRides =$_POST['timee'];
+  $cost =$_POST['price'] ;
+  $description = $_POST['description'];
+  
   $usernameRides = $_SESSION['userUid'];
 
   //echo $usernameRides;
   //echo "<h1> something </h1>";
   //$sql = "INSERT INTO rides (startpoint, endpoint, dateRides, timeRides, seats) VALUES (?,?,?,?,?)";
   if (isset($_SESSION['userUid'])) {
-    $sql = "INSERT INTO rides (`startpoint`,`endpoint`,`dateRides`, `timeRides`,`seats`, `cost`,`description`, `usernameRides`  )  VALUES ('$startpoint', '$endpoint','$dateRides', '$timeRides','$seats', '$cost', '$description', '$usernameRides' )";
+    $sql = "INSERT INTO rides (`startpoint`,`endpoint`,`dateRides`,`seats`, `timeRides`, `cost`,`description`, `usernameRides`  )  VALUES ('$startpoint', '$endpoint','$dateRides', '$seats','$timeRides', '$cost', '$description', '$usernameRides' )";
 
     $stmt = mysqli_stmt_init($conn);
 

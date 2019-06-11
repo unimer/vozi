@@ -11,11 +11,11 @@
 
                     <div class="row">
 
-                        <div class="col-md-3 col-sm-3 col-xs-12">
-                            <div class="field">
-                                <select  name="startlocation">
+                        <div class="col-md-3 col-sm-3 col-xs-12" >
+                            <div class="field ">
+                                <select  name="startlocation" required>
                                     <option input type="text" selected hidden value="">Od</option>
-                                    <option input type="text" selected hidden value="">Od</option>
+                          
                                       <option value="banjaluka">Banja Luka</option>
                                       <option value="bihac">Bihac</option>
                                       <option value="bijeljina">Bijeljina</option>
@@ -125,7 +125,7 @@
 
                         <div class="col-md-3 col-sm-3 col-xs-12">
                           <div class="field">
-                            <input type="text" id="demo1" value="10:00" name=time/>
+                            <input type="text" id="demo1" value ="10:00" name=timee>
                             <script type="text/javascript">
                               $('#demo1').chungTimePicker();
                               </script>
@@ -141,11 +141,37 @@
                                     <option>2</option>
                                     <option>3</option>
                                     <option>4</option>
+                                    <option>5</option>
                                 </select>
                             </div>
 
                         </div>
 
+                        <<div class="col-md-3 col-sm-3 col-xs-12">
+
+                        <div class="field">
+                            <select  name="price">
+                            <?php 
+                                for($i=1; $i<=100; $i++)
+                                {
+
+                                    echo "<option value=".$i.">".$i." KM  </option>";
+                                }
+                                ?> 
+
+                                </select>                     
+                        </div>
+
+                        </div>
+
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+
+                        <textarea name='description' placeholder="Dodatni uslovi ili opis prevoza" rows="1." cols="20"></textarea>
+                        
+                     
+
+
+                        </div>
 
                         <div class="col-md-3 col-sm-3 col-xs-12">
 
