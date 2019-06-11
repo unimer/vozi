@@ -12,11 +12,11 @@ function print_rides($data){
 
                              echo "<a href=\"#\">";
                             echo "<article class=\"ride-box clearfix\">";
-                        
+
                                 echo "<div class=\"ride-content\" >";
-                                    echo "<h3>".$all[startpoint]."-".$all[endpoint]."</h3>vozi: ".$all[usernameRides]."";
+                                    echo "<h3>".$all[startpoint]."-".$all[endpoint]."</h3>vozi: ".$all[usernameRides];
                                 echo "</div>";
-                                
+
                                 echo "<ul class=\"ride-meta\">";
 
                                     echo "<li class=\"ride-date\">";
@@ -24,13 +24,13 @@ function print_rides($data){
                                             //echo "<i class=\"fa fa-calendar\"></i>";
                                             echo $all[dateRides];
 
-                                       
+
                                     echo "</li>"; //<!-- end .ride-date -->
 
                                     echo "<li class=\"ride-times\">";
                                       echo "<class=\"tooltip-link\" data-original-title=\"Date\" data-doggle=\"tooltip\">";
                                         echo $all[timeRides];
-                                     
+
                                     echo "</li>";
 
                                     echo "<li class=\"ride-people\">";
@@ -43,13 +43,13 @@ function print_rides($data){
                                             echo $all[seats]."      Mjesta ";
                                           }
 
-                                      
+
                                     echo "</li>"; //"<!-- end .ride-people -->
 
                                     echo "<li class=\"ride-times\">";
                                       echo "< class=\"tooltip-link\" data-original-title=\"Date\" data-doggle=\"tooltip\">";
                                         echo $all[cost]. " KM";
-                                     
+
                                     echo "</li>";
 
                                 echo "</ul>"; //"<!-- end .ride-meta -->
