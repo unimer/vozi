@@ -16,12 +16,22 @@
                                 <select  name="startlocation" required>
                                     <option input type="text" selected hidden value="">Od</option>
 
+
                                       <option >Banja Luka</option>
                                       <option>Bihac</option>
                                       <option >Bijeljina</option>
                                       <option>Bileća</option>
                                       <option >Brcko</option>
                                       <option>Bugojno</option>
+
+
+                                      <option >Banja Luka</option>
+                                      <option >Bihac</option>
+                                      <option >Bijeljina</option>
+                                      <option >Bileća</option>
+                                      <option >Brcko</option>
+                                      <option >Bugojno</option>
+
                                       <option >Cazin</option>
                                       <option >Čaopljina</option>
                                       <option >Čelinac</option>
@@ -76,6 +86,15 @@
                                       <option value="Cazin">Cazin</option>
                                       <option value="Čapljina">Čaopljina</option>
                                       <option value="Čelinac">Čelinac</option>
+                                      <option >Banja Luka</option>
+                                      <option >Bihac</option>
+                                      <option >Bijeljina</option>
+                                      <option >Bileća</option>
+                                      <option >Brcko</option>
+                                      <option >Bugojno</option>
+                                      <option >Cazin</option>
+                                      <option >Čaopljina</option>
+                                      <option >Čelinac</option>
                                       <option >Doboj</option>
                                       <option >Donji Vakuf</option>
                                       <option >Drvar</option>
@@ -117,9 +136,8 @@
                         <div class="col-md-3 col-sm-3 col-xs-12">
 
                             <div class="field">
-                                <input name="datum" type="text" placeholder="Datum" class="datepicker">
+                                <input name="datum" type="text" placeholder="Datum" class="datepicker"/>
                             </div>
-
 
                         </div>
 
@@ -147,9 +165,10 @@
 
                         </div>
 
-                        <<div class="col-md-3 col-sm-3 col-xs-12">
+                        <div class="col-md-3 col-sm-3 col-xs-12">
 
                         <div class="field">
+
                             <select  name="price" placeholder="Cijena">
                             <?php
                                 echo "<option> Cijena </option>";
@@ -157,20 +176,26 @@
                                 {
                                     echo "<option value=".$i.">".$i." KM  </option>";
                                 }
-                                ?>
+                            // <select  name="price" >
+                            ?>
+                            <?php
+                                for($i=1; $i<=100; $i++)
+                                {
 
-                                </select>
+                                    echo "<option option value=".$i.">".$i." KM  </option>";
+
+                                }
+                            ?>
+
+                            </select>
                         </div>
 
                         </div>
 
                         <div class="col-md-3 col-sm-3 col-xs-12">
-
-                        <textarea name='description' placeholder="Dodatni uslovi ili opis prevoza" rows="1." cols="20"></textarea>
-
-
-
-
+                          <div class="field" >
+                            <textarea name='description' placeholder="Dodatni uslovi ili opis prevoza" rows="1" cols="20"></textarea>
+                          </div>
                         </div>
 
                         <div class="col-md-3 col-sm-3 col-xs-12">
