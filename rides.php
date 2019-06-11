@@ -6,7 +6,7 @@
 
               <div class="search-content">
 
-                  <form action="process.php" method="post" novalidate autocomplete="off" class="idealforms searchtours">
+                  <form action="includes/list-rides.inc.php" method="post" novalidate autocomplete="off" class="idealforms searchtours">
 
                       <div class="row">
 
@@ -65,7 +65,7 @@
 
                               <div class="field">
                                   <select  name="endlocation">
-                                      
+
                                       <option input type="text" selected hidden value="">Do</option>
                                       <option >Banja Luka</option>
                                       <option >Bihac</option>
@@ -136,7 +136,7 @@
                               </div>
 
                           </div> -->
-                        
+
 
                           <div class="col-md-3 col-sm-3 col-xs-12">
 
@@ -158,6 +158,10 @@
 
         <div id="rides">
           <?php require "offered-rides.php" ?>
+          <?php
+  //Process your form
+              header('Location: rides.php#bottomOfPage');
+          ?>
         </div>
 
 

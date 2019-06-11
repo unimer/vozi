@@ -1,6 +1,6 @@
 <?php
   require "dbh.inc.php";
-
+session_start();
 $startpoint=$_POST ["startlocation"];
 $endpoint =$_POST ["endlocation"];
 $dateRides =$_POST ["datum"];
@@ -59,18 +59,30 @@ function print_rides($data){
 
 }
 
-if(isset($_POST['search-btn'])){
 
-  $sql = "SELECT startpoint,endpoint,dateRides,seats FROM rides WHERE startpoint='".$startpoint."' AND endpoint = '".$endpoint."' AND dateRides ='".$dateRides."' AND  seats ='".$seats."'";
 
+
+if(isset($_GET['search'])){
+  $sql = "SELECT * FROM rides WHERE startpoint='".$_SESSION['startpoint']."' AND endpoint = '".$_SESSION['endpoint']."' AND dateRides ='".$_SESSION['dateRides']."'";
   $results=mysqli_query($conn,$sql);
-
-  header("Refresh:0 ../rides.php");
 
   print_rides($results);
 
 }
-else{
+
+
+if(isset($_POST['search-btn'])){
+
+
+  $_SESSION['startpoint'] = $startpoint;
+  $_SESSION['endpoint'] = $endpoint;
+  $_SESSION['dateRides'] = $dateRides;
+
+
+  header("Refresh:0 ../rides.php?search=query#rides");
+
+}
+else if (!$_GET['search']){
   $sql = "SELECT * FROM rides";
 
   $results=mysqli_query($conn,$sql);
