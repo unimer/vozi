@@ -4,7 +4,7 @@
   session_start();
   $_SESSION['last-been'] = "$_SERVER[REQUEST_URI]";
   //$idRides = "";
-  echo "Nikola";
+
   if (isset($_GET['rideID'])) {
     $idRides=$_GET['rideID'];
     $sql = "SELECT * FROM rides WHERE idRides='".$idRides."'";
@@ -17,7 +17,7 @@
       echo "</div>";
 
       echo "<div class=\"row\">";
-      echo "<h1 class=text-info><strong>".$ride['startpoint']." - ".$ride['endpoint']."</strong></h1>";
+        echo "<h1 class=text-info><strong>".$ride['startpoint']." - ".$ride['endpoint']."</strong></h1>";
       echo "</div>";
 
       echo "<div class=\"col-md-0 col-sm-0 col-xs-1\">";
@@ -48,7 +48,7 @@
         }
         else{
           echo "<div class='alert alert-info'>";
-            echo "<a href='login.form.php'> Za pregled telefonskog broja i broja registarskih tablica, morate se prijaviti </a>";
+            echo "<a href='login.form.php'> Za pregled telefonskog broja i broja registarskih oznaka, morate se prijaviti! </a>";
           echo "</div>";
         }
       echo "</div>";

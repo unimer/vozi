@@ -46,8 +46,12 @@ if (isset($_POST['login-submit'])) {
 
           echo $_SESSION['userUid'];
 
-          header("Location: ../index.php?success=kul&userId=".$row['idUsers']);
-
+          if (isset($_SESSION['last-been'])) {
+              header("Location: ".$_SESSION['last-been']);
+          }
+          else{
+            header("Location: ../index.php?success=kul&userId=".$row['idUsers']);
+          }
           exit();
         }
         else {
