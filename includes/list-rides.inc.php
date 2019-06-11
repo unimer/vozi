@@ -12,44 +12,44 @@ function print_rides($data){
 
                              echo "<a href=\"#\">";
                             echo "<article class=\"ride-box clearfix\">";
-                        
+
                                 echo "<div class=\"ride-content\" >";
-                                    echo "<h3>".$all[startpoint]."-".$all[endpoint]."</h3>vozi: ".$all[usernameRides]."";
+                                    echo "<h3>".$all[startpoint]."-".$all[endpoint]."</h3>vozi: ".$all[usernameRides];
                                 echo "</div>";
-                                
+
                                 echo "<ul class=\"ride-meta\">";
 
                                     echo "<li class=\"ride-date\">";
                                         // echo "<a href=\"#\" class=\"tooltip-link\" data-original-title=\"Date\" data-toggle=\"tooltip\">";
                                             //echo "<i class=\"fa fa-calendar\"></i>";
-                                            echo $all[dateRides];
+                                            echo $all[dateRides]."  ";
 
-                                       
+
                                     echo "</li>"; //<!-- end .ride-date -->
 
                                     echo "<li class=\"ride-times\">";
-                                      echo "<class=\"tooltip-link\" data-original-title=\"Date\" data-doggle=\"tooltip\">";
-                                        echo $all[timeRides];
-                                     
+                                    //  echo "<a class=\"tooltip-link\" data-original-title=\"Date\" data-doggle=\"tooltip\">";
+                                        echo $all[timeRides]."  ";
+                                      //    echo "</a>";
                                     echo "</li>";
 
                                     echo "<li class=\"ride-people\">";
-                                        echo "< class=\"tooltip-link\" data-original-title=\"Number of seats\" data-toggle=\"tooltip\">";
+                                        echo "<a class=\"tooltip-link\" data-original-title=\"Number of seats\" data-toggle=\"tooltip\">";
                                           //  echo "<i class=\"fa fa-user\"></i>";
                                           if ($all[seats] == 1) {
-                                            echo $all[seats]. "     Mjesto";
+                                            echo " ".$all[seats]. "     Mjesto";
                                           }
                                           else{
-                                            echo $all[seats]."      Mjesta ";
+                                            echo " ".$all[seats]."      Mjesta ";
                                           }
 
-                                      
+
                                     echo "</li>"; //"<!-- end .ride-people -->
 
                                     echo "<li class=\"ride-times\">";
-                                      echo "< class=\"tooltip-link\" data-original-title=\"Date\" data-doggle=\"tooltip\">";
+                                      echo "<a class=\"tooltip-link\" data-original-title=\"Date\" data-doggle=\"tooltip\">";
                                         echo $all[cost]. " KM";
-                                     
+
                                     echo "</li>";
 
                                 echo "</ul>"; //"<!-- end .ride-meta -->
