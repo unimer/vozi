@@ -13,15 +13,50 @@
                           <div class="col-md-3 col-sm-3 col-xs-12">
                               <div class="field">
                                   <select  name="startlocation">
-                                      <option input type="text" selected hidden value="">Od</option>
+                                      <option input type="text" selected hidden value="">Do</option>
                                       <option value="banjaluka">Banja Luka</option>
-                                      <option value="sarajevo">Sarajevo</option>
                                       <option value="bihac">Bihac</option>
+                                      <option value="bijeljina">Bijeljina</option>
+                                      <option value="bileca">Bileća</option>
                                       <option value="brcko">Brcko</option>
-                                      <option value="mostar">Mostar</option>
-                                      <option value="tuzla">Tuzla</option>
-                                      <option value="trebinje">Trebinje</option>
-                                      <option vlaue="prijedor">Prijedor</option>
+                                      <option value="bugojno">Bugojno</option>
+                                      <option >Cazin</option>
+                                      <option >Čaopljina</option>
+                                      <option >Čelinac</option>
+                                      <option >Doboj</option>
+                                      <option >Donji Vakuf</option>
+                                      <option >Drvar</option>
+                                      <option >Derventa</option>
+                                      <option >Foča</option>
+                                      <option >Fojnica</option>
+                                      <option >Gacko</option>
+                                      <option >Glamoč</option>
+                                      <option >Goražde</option>
+                                      <option >Jablanica</option>
+                                      <option >Jajce</option>
+                                      <option >Kljuc</option>
+                                      <option >Kotor-Varoš</option>
+                                      <option >Kupres</option>
+                                      <option >Laktaši</option>
+                                      <option >Modriča</option>
+                                      <option >Mrkonjić Grad</option>
+                                      <option >Mostar</option>
+                                      <option >Neum</option>
+                                      <option >Nevesinje</option>
+                                      <option >Pale</option>
+                                      <option >Prijedor</option>
+                                      <option >Prnjavor</option>
+                                      <option >Sanski Most</option>
+                                      <option >Sarajevo</option>
+                                      <option >Stolac</option>
+                                      <option >Teslić</option>
+                                      <option >Travnik</option>
+                                      <option >Tuzla</option>
+                                      <option >Trebinje</option>
+                                      <option >Višegrad</option>
+                                      <option >Zenica</option>
+                                      <option >Zvornik</option>
+
                                   </select>
                               </div>
                           </div>
@@ -31,13 +66,49 @@
                               <div class="field">
                                   <select  name="endlocation">
                                       <option selected hidden value="">Do</option>
-                                      <option>Banja Luka</option>
-                                      <option>Sarajevo</option>
-                                      <option>Bihac</option>
-                                      <option>Brcko</option>
-                                      <option>Mostar</option>
-                                      <option>Tuzla</option>
-                                      <option>Trebinje</option>
+                                      <option input type="text" selected hidden value="">Od</option>
+                                      <option value="banjaluka">Banja Luka</option>
+                                      <option value="bihac">Bihac</option>
+                                      <option value="bijeljina">Bijeljina</option>
+                                      <option value="bileca">Bileća</option>
+                                      <option value="brcko">Brcko</option>
+                                      <option value="bugojno">Bugojno</option>
+                                      <option >Cazin</option>
+                                      <option >Čaopljina</option>
+                                      <option >Čelinac</option>
+                                      <option >Doboj</option>
+                                      <option >Donji Vakuf</option>
+                                      <option >Drvar</option>
+                                      <option >Derventa</option>
+                                      <option >Foča</option>
+                                      <option >Fojnica</option>
+                                      <option >Gacko</option>
+                                      <option >Glamoč</option>
+                                      <option >Goražde</option>
+                                      <option >Jablanica</option>
+                                      <option >Jajce</option>
+                                      <option >Kljuc</option>
+                                      <option >Kotor-Varoš</option>
+                                      <option >Kupres</option>
+                                      <option >Laktaši</option>
+                                      <option >Modriča</option>
+                                      <option >Mrkonjić Grad</option>
+                                      <option >Mostar</option>
+                                      <option >Neum</option>
+                                      <option >Nevesinje</option>
+                                      <option >Pale</option>
+                                      <option >Prijedor</option>
+                                      <option >Prnjavor</option>
+                                      <option >Sanski Most</option>
+                                      <option >Sarajevo</option>
+                                      <option >Stolac</option>
+                                      <option >Teslić</option>
+                                      <option >Travnik</option>
+                                      <option >Tuzla</option>
+                                      <option >Trebinje</option>
+                                      <option >Višegrad</option>
+                                      <option >Zenica</option>
+                                      <option >Zvornik</option>
                                   </select>
                               </div>
 
@@ -52,11 +123,11 @@
 
                           </div>
 
-                          <div class="col-md-3 col-sm-3 col-xs-12">
+                          <!-- <div class="col-md-3 col-sm-3 col-xs-12">
 
                               <div class="field">
                                   <select  name="seats">
-                                      <option selected hidden value="">Broj mesta</option>
+                                      <option selected hidden value="">Broj mjesta</option>
                                       <option>1</option>
                                       <option>2</option>
                                       <option>3</option>
@@ -64,7 +135,8 @@
                                   </select>
                               </div>
 
-                          </div>
+                          </div> -->
+                        
 
                           <div class="col-md-3 col-sm-3 col-xs-12">
 
