@@ -27,12 +27,30 @@ function print_rides($data){
                                         echo "</a>";
                                     echo "</li>"; //<!-- end .ride-date -->
 
+                                    echo "<li class=\"ride-times\">";
+                                      echo "<a href=\"#\" class=\"tooltip-link\" data-original-title=\"Date\" data-doggle=\"tooltip\">";
+                                        echo $all[timeRides];
+                                      echo "</a>";
+                                    echo "</li>";
+
                                     echo "<li class=\"ride-people\">";
                                         echo "<a href=\"#\" class=\"tooltip-link\" data-original-title=\"Number of seats\" data-toggle=\"tooltip\">";
                                           //  echo "<i class=\"fa fa-user\"></i>";
-                                            echo $all[seats];
+                                          if ($all[seats] == 1) {
+                                            echo $all[seats]. "     Mjesto";
+                                          }
+                                          else{
+                                            echo $all[seats]."      Mjesta ";
+                                          }
+
                                         echo "</a>";
                                     echo "</li>"; //"<!-- end .ride-people -->
+
+                                    echo "<li class=\"ride-times\">";
+                                      echo "<a href=\"#\" class=\"tooltip-link\" data-original-title=\"Date\" data-doggle=\"tooltip\">";
+                                        echo $all[cost]. " KM";
+                                      echo "</a>";
+                                    echo "</li>";
 
                                 echo "</ul>"; //"<!-- end .ride-meta -->
 

@@ -18,7 +18,7 @@ session_start();
          <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
          <!-- Styles -->
-
+        <link rel="stylesheet" type="text/css" href="dist/bootstrap-clockpicker.min.css">
          <!-- Bootstrap -->
          <link href="css/bootstrap.min.css" rel="stylesheet">
          <!-- Forms -->
@@ -44,6 +44,29 @@ session_start();
          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
          <![endif]-->
 
+
+         <!-- Time Picker -->
+         <link rel="stylesheet" type="text/css" href="css/chung-timepicker.css" />
+         <script src="jQuery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+         <script src="js/chung-timepicker.js" type="text/javascript" charset="utf-8"></script>
+
+         <!-- <style type="text/css">
+           .myDiv {
+             width: 1200px;
+             min-height: 300px;
+             margin: 50px auto;
+             border: 1px solid gainsboro;
+             padding: 20px;
+           }
+
+           .myDiv>div {
+             margin: 20px;
+           }
+
+           .myDiv>div>span {
+             margin-right: 20px;
+           }
+         </style> -->
      </head>
 
 
