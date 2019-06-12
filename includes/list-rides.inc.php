@@ -67,7 +67,15 @@ if(isset($_GET['search'])){
   $sql = "SELECT * FROM rides WHERE startpoint='".$_SESSION['startpoint']."' AND endpoint = '".$_SESSION['endpoint']."' AND dateRides ='".$_SESSION['dateRides']."'";
   $results=mysqli_query($conn,$sql);
 
-  print_rides($results);
+  if($results > 0){
+    print_rides($results);
+
+  }
+  else {
+    echo "<div class= 'alert alert-danger'>";
+      echo "<strong>Da biste dodali vožnju, morate se prijaviti!</strong>";
+    echo "</div>";
+  }
 
 }
 
@@ -84,7 +92,8 @@ if(isset($_POST['search-btn'])){
 
 }
 else if (!$_GET['search']){
-  $sql = "SELECT * FROM rides";
+  $sql = "SELECT * FROM rides order by `idRides` DESC";
+  //$sql = "SELECT * FROM rides";
 
   $results=mysqli_query($conn,$sql);
 
