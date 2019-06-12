@@ -13,6 +13,7 @@ if (isset($_POST['insert-ride'])) {
   $description = $_POST['description'];
   $licence = $_POST['licencePlates'];
   $usernameRides = $_SESSION['userUid'];
+  $phone = $_SESSION['userPhone'];
 
 
   if (!isset($_POST['licencePlates'])) {
@@ -22,11 +23,12 @@ if (isset($_POST['insert-ride'])) {
     $licence = $_POST['licencePlates'];
   }
 
+
   //echo $usernameRides;
   //echo "<h1> something </h1>";
   //$sql = "INSERT INTO rides (startpoint, endpoint, dateRides, timeRides, seats) VALUES (?,?,?,?,?)";
   if (isset($_SESSION['userUid'])) {
-    $sql = "INSERT INTO rides (`startpoint`,`endpoint`,`dateRides`,`seats`, `timeRides`, `cost`,`description`, `usernameRides`, `licence`  )  VALUES ('$startpoint', '$endpoint','$dateRides', '$seats','$timeRides', '$cost', '$description', '$usernameRides', '$licence' )";
+    $sql = "INSERT INTO rides (`startpoint`,`endpoint`,`dateRides`,`seats`, `timeRides`, `cost`,`description`, `usernameRides`, `licence`, `phoneRides`  )  VALUES ('$startpoint', '$endpoint','$dateRides', '$seats','$timeRides', '$cost', '$description', '$usernameRides', '$licence', '$phone' )";
 
     $stmt = mysqli_stmt_init($conn);
 
@@ -35,7 +37,7 @@ if (isset($_POST['insert-ride'])) {
       exit();
     }
     else{
-      mysqli_stmt_bind_param($stmt, "sssssssss", $startpoint, $endpoint, $dateRides, $timeRides, $seats, $cost, $description, $usernameRides, $licence);
+      mysqli_stmt_bind_param($stmt, "ssssssssss", $startpoint, $endpoint, $dateRides, $timeRides, $seats, $cost, $description, $usernameRides, $licence, $phone);
       mysqli_stmt_execute($stmt);
       header("Location: ../rides.php?sucess=suc", true, 301);
       exit();

@@ -9,9 +9,10 @@ if (isset($_POST['signup-btn'])) {
    $email = $_POST['mail'];
    $password = $_POST['pwd'];
    $passwordRepeat = $_POST['pwd-repeat'];
+   $phone = $_POST['phone'];
 
    #Error handlers
-   if(empty($username) || empty($email) || empty($password) || empty($passwordRepeat)){
+   if(empty($username) || empty($email) || empty($password) || empty($passwordRepeat) || empty($phone)){
      header("Location: ../signup.form.php?error=emptyfields&uid=".$username."&mail=".$email);
      exit(); //stop code here
    }
@@ -52,16 +53,16 @@ if (isset($_POST['signup-btn'])) {
          exit();
       }
       else{
-        $sql = "INSERT INTO users (uidUsers, emailUsers, pwdUsers) VALUES (?,?,?)";
+        $hashedPwd = password_hash($password, PASSWORD_DEFAULT); //hash pasword
+        $sql = "INSERT INTO users (`uidUsers`, `emailUsers`, `phone-contact`, `pwdUsers`) VALUES ('$username','$email','$phone', '$hashedPwd')";
         $stmt = mysqli_stmt_init($conn); //prepared statement
         if (!mysqli_stmt_prepare($stmt, $sql)) { //check if we can prepare this statement
           header("Location: ../signup.form.php?error=sqlerror");
           exit;
         }
         else {
-          $hashedPwd = password_hash($password, PASSWORD_DEFAULT); //hash pasword
 
-          mysqli_stmt_bind_param($stmt, "sss", $username, $email, $hashedPwd); //take this information to db
+          mysqli_stmt_bind_param($stmt, "ssss", $username, $email, $phone, $hashedPwd ); //take this information to db
           mysqli_stmt_execute($stmt); //run this information to the db
           header("Location: ../post_signup.php?signup=success");
 

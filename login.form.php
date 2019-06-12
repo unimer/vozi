@@ -3,6 +3,9 @@
   <section class="main-content">
     <div class="container">
       <form action="includes/login.inc.php" method="post">
+        <div class="col-md-5 col-sm-5 col-xs-5">
+          <!-- space -->
+        </div>
         <div class="col-xs-2">
           <h2>Prijava</h2>
 
@@ -10,6 +13,7 @@
               <label>Korisničko ime/Email:</label>
               <input type="text" class="form-control" placeholder="" name="mailuid">
             </div>
+
             <div class="form-group">
               <label>Šifra:</label>
               <input type="password" class="form-control" placeholder="" name="pwd">

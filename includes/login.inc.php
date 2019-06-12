@@ -43,8 +43,9 @@ if (isset($_POST['login-submit'])) {
           session_start();
           $_SESSION['userId'] = $row['idUsers'];
           $_SESSION['userUid'] = $row['uidUsers'];
+          $_SESSION['userPhone'] = $row['phone-contact'];
 
-          echo $_SESSION['userUid'];
+          //echo $_SESSION['userUid'];
 
           if (isset($_SESSION['last-been'])) {
               header("Location: ".$_SESSION['last-been']);

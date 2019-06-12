@@ -44,7 +44,10 @@
         if (isset($_SESSION['userUid'])) {
           echo "<h3 class=\"text-warning\"><strong>Opis vožnje: </strong></h3>";
           echo "<p class='text-muted'>".$ride['description']."</p>";
-          echo "<h3><strong class=\"text-warning\">Kontakt: </strong><strong class='text-muted'><a href='#' targer='blank'>065 555 555</a></strong></h3>";
+          echo "<h3><strong class=\"text-warning\">Kontakt: </strong><strong class='text-muted'><a href='#' targer='blank'>".$ride['phoneRides']."</a></strong></h3>";
+          echo "<p></p>";
+          echo "<h3><strong class=\"text-warning\">Registarske oznake: </strong><strong class='text-muted'><a href='#' targer='blank'>".$ride['licence']."</a></strong></h3>";
+
         }
         else{
           echo "<div class='alert alert-info'>";
