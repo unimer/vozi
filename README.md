@@ -1,5 +1,5 @@
 # vozi
-<h1> Abstract <h1>
+<h1> Abstract </h1>
 <div>
   <p> This is a student project which aim is to help us learn and understand web app development.
   In the other hand, when finished, this web app will be deployed and will integrate idea of carpooling in Bosnia and Herzegovina. </p>
